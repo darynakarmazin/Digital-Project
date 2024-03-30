@@ -298,8 +298,10 @@ header {
     }
     ul {
       display: flex;
+      flex-direction: column;
       gap: 30px;
       @media screen and (min-width: 768px) {
+        flex-direction: row;
         gap: 100px;
       }
       @media screen and (min-width: 1440px) {
@@ -444,8 +446,6 @@ header {
     line-height: 64px;
     margin-bottom: 8px;
   }
-
-  //
 }
 
 .contact-us-section {
@@ -462,7 +462,13 @@ header {
     }
     .wrapper {
       display: flex;
+      flex-direction: column;
       gap: 30px;
+      @media screen and (min-width: 768px) {
+        flex-direction: row;
+      }
+      @media screen and (min-width: 1440px) {
+      }
       form {
         flex-grow: 1;
         .booking-row {
@@ -593,9 +599,8 @@ footer {
           color: #fff;
           font-family: 'TT Hoves Pro Trial', sans-serif;
           font-size: 14px;
-          font-style: normal;
           font-weight: 500;
-          line-height: 24px; /* 171.429% */
+          line-height: 1.7;
           letter-spacing: 0.42px;
         }
       }
