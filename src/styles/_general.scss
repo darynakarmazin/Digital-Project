@@ -148,9 +148,10 @@ header {
 
 .about-section {
   margin-bottom: 120px;
-  .container {
+  .about-container {
     background: var(--1, #fbfbfb);
-    padding: 30px 70px 0 100px;
+    padding: 30px 70px;
+    justify-content: center;
     display: flex;
     gap: 30px;
     .about-photolist {
@@ -535,12 +536,14 @@ footer {
         gap: 32px;
 
         a {
+          display: flex;
+          gap: 14px;
           color: #fff;
           font-family: 'TT Hoves Pro Trial', sans-serif;
           font-size: 14px;
           font-style: normal;
           font-weight: 500;
-          line-height: 24px; /* 171.429% */
+          line-height: 24px;
           letter-spacing: 0.42px;
 
           svg {
