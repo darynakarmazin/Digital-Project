@@ -1,4 +1,8 @@
 html {
+  scroll-behavior: smooth;
+}
+
+* {
   box-sizing: border-box;
 }
 
@@ -46,19 +50,37 @@ a {
 }
 
 .container {
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
+  width: 100%;
+  min-width: 360px;
+  padding-left: 8px;
+  padding-right: 8px;
   margin-left: auto;
   margin-right: auto;
 }
 
-// @media (max-width: 576px) {
-//   .container {
-//     max-width: 324px;
-//     padding-left: 15px;
-//     padding-right: 15px;
-//     margin-left: auto;
-//     margin-right: auto;
-//   }
-// }
+/* MOBILE */
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+}
+
+/* TABLET */
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+/* DESKTOP */
+@media screen and (min-width: 1440px) {
+  .container {
+    width: 1440px;
+    padding-left: 135px;
+    padding-right: 135px;
+  }
+}
