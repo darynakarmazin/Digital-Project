@@ -1,0 +1,21 @@
+:root {
+  // Font colors
+  --gray-1: #333333;
+  --gray-2: #8d8d8d;
+  --gray-4: #bdbdbd;
+  --black-1: #000000;
+  --gray-6: #f2f2f2;
+  --white-1: #ffffff;
+
+  // Background colors
+  --bg-color-1: #fbfbfb;
+  --bg-color-2: #f3f3f3;
+  --bg-color-3: #2c2c2c;
+
+  // Fonts
+  --main-font: 'TT Hoves Pro Trial', sans-serif;
+  --secondary-font: 'SF Pro Display', sans-serif;
+
+  // Animation
+  --transition-dur-and-func: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}

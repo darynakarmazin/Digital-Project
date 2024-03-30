@@ -1,10 +1,527 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Digital project</title>
+    <title>Digital Project</title>
+    <link href="./images/favicon/favicon.ico" rel="icon" type="image/x-icon" />
+    <link
+      href="https://fonts.cdnfonts.com/css/tt-hoves-pro-trial"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.cdnfonts.com/css/sf-pro-display"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script type="module" src="./index.js"></script>
   </head>
-  <body></body>
+  <body>
+    <header>
+      <div class="container">
+        <nav>
+          <a href="/" class="header-logo">
+            <img
+              src="./images/icon/logo-digital-project.svg"
+              alt="logo-digital-project"
+            />
+          </a>
+          <ul class="header-list">
+            <li class="header-list-item"><a href="#">ГЛАВНАЯ</a></li>
+            <li class="header-list-item">
+              <a href="#gallery-section">ГАЛЕРЕЯ</a>
+            </li>
+            <li class="header-list-item">
+              <a href="#projects-section">ПРОЕКТЫ</a>
+            </li>
+            <li class="header-list-item">
+              <a href="#certifications-section">СЕРТИФИКАТЫ</a>
+            </li>
+            <li class="header-list-item">
+              <a href="#contacts-section">КОНТАКТЫ</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="hero-section" id="gallery-section">
+        <div class="container">
+          <div class="wrapper">
+            <h1>PROJECT<br /><span>HOME</span></h1>
+            <div>
+              <button class="slider-prev">
+                <svg width="24" height="24">
+                  <use href="./images/icon/arrow-left.svg"></use>
+                </svg></button
+              ><button class="slider-next">
+                <svg width="24" height="24">
+                  <use href="./images/icon/arrow-right.svg"></use>
+                </svg>
+              </button>
+            </div>
+            <div class="hero-counter">
+              <span class="slider-count">01</span><span>/</span><span>02</span>
+            </div>
+          </div>
+          <div class="slider">
+            <div class="hero-banner-wrapper slider-line" data-aos="fade-left">
+              <picture>
+                <source
+                  srcset="
+                    ./images/hero-photo-1.jpg    1x,
+                    ./images/hero-photo-1@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <img
+                  class="hero-banner"
+                  src="./images/hero-photo-1.jpg"
+                  alt="hero-photo"
+                />
+              </picture>
+              <picture>
+                <source
+                  srcset="
+                    ./images/hero-photo-2.jpg    1x,
+                    ./images/hero-photo-2@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <img
+                  class="hero-banner"
+                  src="./images/hero-photo-2.jpg"
+                  alt="hero-photo"
+                />
+              </picture>
+            </div>
+            <a class="hero-arrow-link" href="#"
+              >ВЗГЛЯНУТЬ
+              <svg width="24" height="24">
+                <use href="./images/icon/arrow-right.svg"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </section>
+      <section class="about-section">
+        <div class="container">
+          <ul class="about-photolist">
+            <li>
+              <picture>
+                <source
+                  srcset="
+                    ./images/about-img-1.jpg    1x,
+                    ./images/about-img-1@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <img
+                  src="./images/about-img-1.jpg"
+                  alt="about-img-1"
+                  data-aos="zoom-in-right"
+                />
+              </picture>
+            </li>
+            <li>
+              <picture>
+                <source
+                  srcset="
+                    ./images/about-img-3.jpg    1x,
+                    ./images/about-img-3@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <img
+                  src="./images/about-img-3.jpg"
+                  alt="images/about-img-3"
+                  data-aos="zoom-in-right"
+                />
+              </picture>
+            </li>
+            <li>
+              <picture>
+                <source
+                  srcset="
+                    ./images/about-img-2.jpg    1x,
+                    ./images/about-img-2@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <img
+                  src="./images/about-img-2.jpg"
+                  alt="images/about-img-2"
+                  data-aos="zoom-in-right"
+                />
+              </picture>
+            </li>
+          </ul>
+          <div class="about-information">
+            <h2>О компании</h2>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+            </p>
+            <a href="#"
+              >ЧИТАТЬ
+              <svg width="24" height="24">
+                <use href="./images/icon/arrow-right.svg"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </section>
+      <section class="task-section">
+        <div class="container">
+          <h2>Основные задачи</h2>
+          <ul>
+            <li>
+              <span>1</span>
+              <p>
+                Создание комфортных условий и повышение качества обслуживания клиентов
+              </p>
+            </li>
+            <li>
+              <span>2</span>
+              <p>
+                Постоянно совершенствовать качество предоставляемых услуг путем обучения персонала, закупки нового оборудования и усиленной рекламы на рынке
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="projects-section" id="projects-section">
+        <div class="container">
+          <h2>Наши проекты</h2>
+          <ul class="portfolio-list">
+            <li class="item">
+              <a href="#" class="link portfolio-card">
+                <div class="thumb" data-aos="flip-left">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/projects-img-1.jpg    1x,
+                        ./images/projects-img-1@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      class="projects-img"
+                      src="./images/projects-img-1.jpg"
+                      alt="photo project"
+                    />
+                  </picture>
+                  <div class="actions-card">
+                    <p class="discription">ДОСУГОВЫЙ ЦЕНТР</p>
+                    <button>
+                      ПОДРОБНЕЕ
+                      <svg width="24" height="24">
+                        <use href="./images/icon/arrow-right.svg"></use>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="item">
+              <a href="#" class="link portfolio-card">
+                <div class="thumb" data-aos="flip-right">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/projects-img-2.jpg    1x,
+                        ./images/projects-img-2@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      class="projects-img"
+                      src="./images/projects-img-2.jpg"
+                      alt="photo project"
+                    />
+                  </picture>
+                  <div class="actions-card">
+                    <p class="discription">ДОСУГОВИЙ ЦЕНТР</p>
+                    <button>
+                      ПОДРОБНЕЕ
+                      <svg width="24" height="24">
+                        <use href="./images/icon/arrow-right.svg"></use>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="item">
+              <a href="#" class="link portfolio-card">
+                <div class="thumb" data-aos="flip-left">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/projects-img-3.jpg    1x,
+                        ./images/projects-img-3@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      class="projects-img"
+                      src="./images/projects-img-3.jpg"
+                      alt="photo project"
+                    />
+                  </picture>
+                  <div class="actions-card">
+                    <p class="discription">ЦЕНТР</p>
+                    <button>
+                      ПОДРОБНЕЕ
+                      <svg width="24" height="24">
+                        <use href="./images/icon/arrow-right.svg"></use>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="item">
+              <a href="#" class="link portfolio-card">
+                <div class="thumb" data-aos="flip-right">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/projects-img-4.jpg    1x,
+                        ./images/projects-img-4@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      class="projects-img"
+                      src="./images/projects-img-4.jpg"
+                      alt="photo project"
+                    />
+                  </picture>
+                  <div class="actions-card">
+                    <p class="discription">ДОСУГОВИЙ ЦЕНТР</p>
+                    <button>
+                      ПОДРОБНЕЕ
+                      <svg width="24" height="24">
+                        <use href="./images/icon/arrow-right.svg"></use>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="item">
+              <a href="#" class="link portfolio-card">
+                <div class="thumb" data-aos="flip-left">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/projects-img-5.jpg    1x,
+                        ./images/projects-img-5@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      class="projects-img"
+                      src="./images/projects-img-5.jpg"
+                      alt="photo project"
+                    />
+                  </picture>
+                  <div class="actions-card">
+                    <p class="discription">ЦЕНТР</p>
+                    <button>
+                      ПОДРОБНЕЕ
+                      <svg width="24" height="24">
+                        <use href="./images/icon/arrow-right.svg"></use>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </a>
+            </li>
+          </ul>
+          <a class="projects-link" href="#"
+            >ВСЕ ПРОЕКТЫ
+            <svg width="24" height="24">
+              <use href="./images/icon/arrow-right.svg"></use>
+            </svg>
+          </a>
+        </div>
+      </section>
+      <section class="contact-us-section">
+        <div class="container">
+          <h2>Связаться с нами</h2>
+          <div class="wrapper">
+            <form autocomplete="on" novalidate>
+              <div class="booking-row">
+                <label class="booking-label">
+                  <input
+                    class="booking-input"
+                    type="text"
+                    name="name"
+                    placeholder="Имя"
+                  />
+                </label>
+                <label class="booking-label">
+                  <input
+                    class="booking-input"
+                    type="tel"
+                    name="phone"
+                    placeholder="Номер телефона*"
+                  />
+                </label>
+                <label class="booking-label">
+                  <input
+                    class="booking-input"
+                    type="text"
+                    name="email"
+                    placeholder="E-mail*"
+                  />
+                </label>
+                <label class="booking-label">
+                  <input
+                    class="booking-input"
+                    type="text"
+                    name="choose"
+                    placeholder="Интересующий товар/услуга"
+                  />
+                </label>
+                <label class="booking-label">
+                  <textarea
+                    class="booking-input booking-comment"
+                    name="message"
+                    placeholder="Сообщение*"
+                  ></textarea>
+                </label>
+              </div>
+              <label class="form-policy">
+                <input class="checkbox" type="checkbox" name="privacy-policy" />
+                <span class="icon-policy"></span>
+                <p class="form-label agreement">
+                 Отправляя заявку Вы соглашаетесь с политикой конфиденциальности
+                </p>
+              </label>
+              <button type="submit">
+               ОТПРАВИТЬ<svg width="24" height="24">
+                  <use href="./images/icon/arrow-right.svg"></use>
+                </svg>
+              </button>
+            </form>
+            <picture>
+              <source
+                srcset="
+                  ./images/contact-us-img.jpg    1x,
+                  ./images/contact-us-img@2x.jpg 2x
+                "
+                type="image/jpg"
+              />
+              <img
+                class="contact-photo"
+                src="./images/contact-us-img.jpg"
+                alt="man with phone img"
+                data-aos="zoom-out-down"
+              />
+            </picture>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-wrapper container">
+        <div class="footer-logo">
+          <a href="#"
+            ><img src="./images/icon/footer-logo.svg" alt="company logo"
+          /></a>
+        </div>
+        <div class="footer-information">
+          <h3>Информация</h3>
+          <ul class="footer-list">
+            <li class="footer-list-item"><a href="#">Главная</a></li>
+            <li class="footer-list-item"><a href="#gallery-section">Галерея</a></li>
+            <li class="footer-list-item"><a href="#projects-section">Проекты</a></li>
+            <li class="footer-list-item"><a href="#certifications-section">Сертификаты</a></li>
+            <li class="footer-list-item"><a href="#contacts-section">Контакты</a></li>
+          </ul>
+        </div>
+        <div class="contacts-section" id="contacts-section">
+          <h3>Контакты</h3>
+          <adress>
+            <ul class="contact-list list">
+              <li class="adress">
+                <a
+                  class="link contacts-link adress"
+                  href="https://goo.gl/maps/RsUKrL9NW7S4d8BLA"
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                >
+                  <img
+                    class="adress-icon"
+                    width="24"
+                    height="24"
+                    src="./images/icon/map-point.svg"
+                    alt="map-point"
+                  />
+                  100000, Республика Казахстан, г. Караганда, ул. Телевизионная 10</a
+                >
+              </li>
+              <li class="phone">
+                <a class="link contacts-link phone" href="tel:+380000000000"></a>
+                  <img
+                    class="adress-icon"
+                    width="24"
+                    height="24"
+                    src="./images/icon/phone.svg"
+                    alt="phone"
+                  />
+                  +38 (000) 000 00 00</a
+                >
+              </li>
+              <li>
+                <a class="contacts-link" href="mailto:mail@gmail.com"
+                  >
+                  <img class="adress-icon" width="24" height="24" src="./images/icon/email.svg" alt="email">
+                  mail@gmail.com</a
+                >
+              </li>
+            </ul>
+          </adress>
+        </div>
+        <div class="social-section">
+          <h3>Социальние сети</h3>
+          <ul class="social-list">
+            <li class="social-list-item">
+              <a href="" class="social-list-link">
+                <img class="social-list-icon"
+                  width="10"
+                  height="19" src="./images/icon/facebook.svg" alt="facebook">
+              </a>
+            </li>
+            <li class="social-list-item">
+              <a href="" class="social-list-link">
+                <img class="social-list-icon" width="22" height="17" src="./images/icon/twitter.svg" alt="twitter">
+              </a>
+            </li>
+            <li class="social-list-item">
+              <a href="" class="social-list-link">
+                <img class="social-list-icon" width="20" height="20" src="./images/icon/linkedIn.svg" alt="linkedIn">
+              </a>
+            </li>
+            <li class="social-list-item">
+              <a href="" class="social-list-link">
+                <img class="social-list-icon" width="14" height="19" src="./images/icon/pininterest.svg" alt="pininterest">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="copyright">
+        <div class="container">
+          <p>© 2019 Digital Project. Все права защищены.</p>
+        </div>
+      </div>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
 </html>
